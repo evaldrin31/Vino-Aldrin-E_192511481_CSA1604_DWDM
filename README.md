@@ -12,6 +12,10 @@
 
 ```
 CSA1604/
+├── ALL LAB EXPERIMENTS/
+│   ├── Exp_01_Approximate_Median.png ... Exp_21_b_Blood_Pressure_vs_Age_Bar_Chart.png
+│   └── README.md  (Consolidated 01 to 21 sequential screenshots & documentation)
+│
 ├── ASSESSMENTS/
 │   ├── Vino Aldrin E_192511481_CSA1604_CO1_Activity-I.pdf
 │   ├── Vino Aldrin E_192511481_CSA1604_CO1_AT-1_Short_Answer_Test.pdf
