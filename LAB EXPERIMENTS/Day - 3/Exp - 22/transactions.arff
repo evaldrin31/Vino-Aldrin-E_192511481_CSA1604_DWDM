@@ -1,0 +1,19 @@
+@relation customer_transactions
+
+@attribute a {t}
+@attribute b {t}
+@attribute c {t}
+@attribute d {t}
+@attribute e {t}
+
+@data
+t,?,?,t,t   % 0001
+t,t,t,?,t   % 0024
+t,t,?,t,t   % 0012
+t,?,t,t,t   % 0031
+?,t,t,?,t   % 0015
+?,t,?,t,t   % 0022
+?,?,t,t,?   % 0029
+t,t,t,?,?   % 0040
+t,?,?,t,t   % 0033
+t,t,?,?,t   % 0038
