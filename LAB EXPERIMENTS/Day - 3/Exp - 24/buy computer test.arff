@@ -1,0 +1,14 @@
+@relation buy_computer
+
+@attribute age {'<=30','31-40','>40'}
+@attribute income {low,medium,high}
+@attribute student {yes,no}
+@attribute credit_rating {fair,excellent}
+@attribute buys_computer {yes,no}
+
+@data
+% test data = RID 11-14
+'<=30',medium,yes,excellent,yes
+'31-40',medium,no,excellent,yes
+'31-40',high,yes,fair,yes
+'>40',medium,no,excellent,no
