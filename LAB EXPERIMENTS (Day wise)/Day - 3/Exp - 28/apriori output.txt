@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 1000 -T 0 -C 0.6 -D 0.05 -U 1.0 -M 0.33 -S -1.0 -c -1
+Relation:     hotdog_transactions
+Instances:    6
+Attributes:   5
+              Hot_Dogs
+              Buns
+              Ketchup
+              Coke
+              Chips
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.33 (2 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 14
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 5
+
+Large Itemsets L(1):
+Hot_Dogs=t 4
+Buns=t 2
+Ketchup=t 2
+Coke=t 3
+Chips=t 4
+
+Size of set of large itemsets L(2): 4
+
+Large Itemsets L(2):
+Hot_Dogs=t Buns=t 2
+Hot_Dogs=t Coke=t 2
+Hot_Dogs=t Chips=t 2
+Coke=t Chips=t 3
+
+Size of set of large itemsets L(3): 1
+
+Large Itemsets L(3):
+Hot_Dogs=t Coke=t Chips=t 2
+
+Best rules found:
+
+  1. Coke=t 3 ==> Chips=t 3    <conf:(1)> lift:(1.5) lev:(0.17) [1] conv:(1)
+  2. Buns=t 2 ==> Hot_Dogs=t 2    <conf:(1)> lift:(1.5) lev:(0.11) [0] conv:(0.67)
+  3. Hot_Dogs=t Chips=t 2 ==> Coke=t 2    <conf:(1)> lift:(2) lev:(0.17) [1] conv:(1)
+  4. Hot_Dogs=t Coke=t 2 ==> Chips=t 2    <conf:(1)> lift:(1.5) lev:(0.11) [0] conv:(0.67)
+  5. Chips=t 4 ==> Coke=t 3    <conf:(0.75)> lift:(1.5) lev:(0.17) [1] conv:(1)
+  6. Coke=t 3 ==> Hot_Dogs=t 2    <conf:(0.67)> lift:(1) lev:(0) [0] conv:(0.5)
+  7. Coke=t Chips=t 3 ==> Hot_Dogs=t 2    <conf:(0.67)> lift:(1) lev:(0) [0] conv:(0.5)
+  8. Coke=t 3 ==> Hot_Dogs=t Chips=t 2    <conf:(0.67)> lift:(2) lev:(0.17) [1] conv:(1)
+
