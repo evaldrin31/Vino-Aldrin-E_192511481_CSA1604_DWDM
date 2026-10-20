@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                    Class
+Variable                              yes
+=========================================
+outlook=sunny                    -45.2378
+outlook=overcast                  57.5375
+outlook=rainy                     -5.9067
+temperature=hot                   -8.3327
+temperature=mild                  44.8546
+temperature=cool                 -45.4929
+humidity=normal                  118.1425
+windy=FALSE                       72.9648
+Intercept                        -89.2032
+
+
+Odds Ratios...
+                                    Class
+Variable                              yes
+=========================================
+outlook=sunny                           0
+outlook=overcast      9.73275593611619E24
+outlook=rainy                      0.0027
+temperature=hot                    0.0002
+temperature=mild    3.0207875213740724E19
+temperature=cool                        0
+humidity=normal     2.0353933107400553E51
+windy=FALSE          4.877521304260806E31
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          10               71.4286 %
+Incorrectly Classified Instances         4               28.5714 %
+Kappa statistic                          0.3778
+Mean absolute error                      0.2858
+Root mean squared error                  0.5345
+Relative absolute error                 60.009  %
+Root relative squared error            108.3425 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.778    0.400    0.778      0.778    0.778      0.378    0.767     0.817     yes
+                 0.600    0.222    0.600      0.600    0.600      0.378    0.767     0.655     no
+Weighted Avg.    0.714    0.337    0.714      0.714    0.714      0.378    0.767     0.759     
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 7 2 | a = yes
+ 2 3 | b = no
+
