@@ -1,0 +1,20 @@
+@relation monkey_transactions
+
+@attribute M {t}
+@attribute O {t}
+@attribute N {t}
+@attribute K {t}
+@attribute E {t}
+@attribute Y {t}
+@attribute D {t}
+@attribute A {t}
+@attribute U {t}
+@attribute C {t}
+@attribute I {t}
+
+@data
+t,t,t,t,t,t,?,?,?,?,?   % T1
+?,t,t,t,t,t,t,?,?,?,?   % T2
+t,?,?,t,t,?,?,t,?,?,?   % T3
+t,?,?,t,?,t,?,?,t,t,?   % T4
+?,t,?,t,t,?,?,?,?,t,t   % T5
