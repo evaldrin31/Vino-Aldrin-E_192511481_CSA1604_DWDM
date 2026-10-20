@@ -1,0 +1,27 @@
+@relation gender_tree
+
+@attribute Height numeric
+@attribute Weight numeric
+@attribute Gender {Male,Female}
+
+@data
+185,90,Male
+190,78,Male
+182,70,Male
+175,85,Male
+170,95,Male
+165,82,Male
+178,60,Female
+160,55,Female
+172,65,Female
+168,72,Female
+186,88,Male
+176,81,Male
+155,50,Female
+181,75,Male
+174,79,Female
+163,58,Female
+179,84,Male
+158,62,Female
+192,95,Male
+169,68,Female
