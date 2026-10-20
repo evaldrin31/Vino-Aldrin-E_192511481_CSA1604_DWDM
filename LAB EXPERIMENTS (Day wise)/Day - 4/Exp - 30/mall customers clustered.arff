@@ -1,0 +1,71 @@
+@relation 'mall customers_clustered'
+
+@attribute Instance_number numeric
+@attribute CustomerID numeric
+@attribute Gender {Male,Female}
+@attribute Age numeric
+@attribute AnnualIncome numeric
+@attribute SpendingScore numeric
+@attribute Cluster {cluster0,cluster1,cluster2,cluster3,cluster4}
+
+@data
+0,1,Male,19,15,39,cluster2
+1,2,Male,21,15,81,cluster1
+2,3,Female,20,16,6,cluster2
+3,4,Female,23,16,77,cluster1
+4,5,Female,31,17,40,cluster2
+5,6,Female,31,26,93,cluster1
+6,7,Male,69,39,35,cluster2
+7,8,Male,28,47,43,cluster3
+8,9,Female,35,85,82,cluster4
+9,10,Male,53,85,5,cluster0
+10,11,Male,26,23,71,cluster1
+11,12,Female,60,39,30,cluster2
+12,13,Male,33,61,59,cluster3
+13,14,Female,30,78,70,cluster4
+14,15,Male,41,119,11,cluster0
+15,16,Male,22,24,80,cluster1
+16,17,Male,61,20,35,cluster2
+17,18,Male,49,51,40,cluster3
+18,19,Female,34,80,99,cluster4
+19,20,Male,43,74,15,cluster0
+20,21,Female,29,33,60,cluster3
+21,22,Female,57,24,16,cluster2
+22,23,Female,55,64,50,cluster3
+23,24,Male,35,100,92,cluster4
+24,25,Male,36,86,35,cluster0
+25,26,Male,31,26,85,cluster1
+26,27,Male,68,26,17,cluster2
+27,28,Male,53,43,45,cluster3
+28,29,Male,29,118,77,cluster4
+29,30,Female,46,102,16,cluster0
+30,31,Female,32,29,66,cluster1
+31,32,Female,64,16,18,cluster2
+32,33,Male,38,52,56,cluster3
+33,34,Female,30,91,78,cluster4
+34,35,Male,44,113,15,cluster0
+35,36,Female,22,40,65,cluster3
+36,37,Male,64,30,10,cluster2
+37,38,Male,30,61,57,cluster3
+38,39,Female,28,85,93,cluster4
+39,40,Female,43,99,25,cluster0
+40,41,Female,22,16,62,cluster1
+41,42,Female,65,21,9,cluster2
+42,43,Male,51,45,45,cluster3
+43,44,Female,33,79,71,cluster4
+44,45,Female,44,79,19,cluster0
+45,46,Male,28,29,91,cluster1
+46,47,Female,70,23,14,cluster2
+47,48,Female,50,46,43,cluster3
+48,49,Female,36,81,90,cluster4
+49,50,Female,45,81,7,cluster0
+50,51,Female,24,31,95,cluster1
+51,52,Female,57,40,30,cluster2
+52,53,Female,27,66,49,cluster3
+53,54,Female,36,115,91,cluster4
+54,55,Female,50,86,29,cluster0
+55,56,Female,25,35,71,cluster1
+56,57,Male,70,32,29,cluster2
+57,58,Female,45,63,48,cluster3
+58,59,Female,32,102,90,cluster4
+59,60,Female,46,87,25,cluster0
