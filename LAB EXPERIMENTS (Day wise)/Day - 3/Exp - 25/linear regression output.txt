@@ -1,0 +1,31 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLinearRegression 
+Relation:     diabetes-weka.filters.unsupervised.attribute.Remove-R2,4-5
+Instances:    30
+Attributes:   2
+              Age
+              Glucose
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Linear regression on Age
+
+0.87 * Age + 112.61
+
+Predicting 0 if attribute value is missing.
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.8824
+Mean absolute error                      6.4142
+Root mean squared error                  7.3975
+Relative absolute error                 45.8315 %
+Root relative squared error             46.0992 %
+Total Number of Instances               30     
+
