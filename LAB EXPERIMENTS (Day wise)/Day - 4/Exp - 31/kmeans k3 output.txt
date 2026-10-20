@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 1 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     employee
+Instances:    6
+Attributes:   5
+              Gender
+              Age
+              Salary
+              Credit
+Ignored:
+              EmployeID
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 1.4523456790123455
+
+Initial starting points (k-means++):
+
+Cluster 0: Female,25,160000,40
+Cluster 1: Female,26,160000,42
+Cluster 2: Male,25,150000,27
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                           Cluster#
+Attribute     Full Data           0           1           2
+                  (6.0)       (2.0)       (2.0)       (2.0)
+===========================================================
+Gender             Male      Female        Male        Male
+Age             27.1667        25.5        29.5        26.5
+Salary           165000      160000      185000      150000
+Credit          47.3333          41          68          33
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      2 ( 33%)
+1      2 ( 33%)
+2      2 ( 33%)
+
