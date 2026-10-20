@@ -1,0 +1,21 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 1000 -T 0 -C 0.75 -D 0.05 -U 1.0 -M 0.5
+Relation:     grocery_transactions
+Instances:    5
+Attributes:   6
+              Bread
+              Cheese
+              Egg
+              Juice
+              Milk
+              Yogurt
+=== Associator model (full training set) ===
+
+FPGrowth found 4 rules (displaying top 4)
+
+1. [Cheese=t]: 3 ==> [Juice=t]: 3   <conf:(1)> lift:(1.25) lev:(0.12) conv:(0.6) 
+2. [Juice=t]: 4 ==> [Bread=t]: 3   <conf:(0.75)> lift:(0.94) lev:(-0.04) conv:(0.4) 
+3. [Bread=t]: 4 ==> [Juice=t]: 3   <conf:(0.75)> lift:(0.94) lev:(-0.04) conv:(0.4) 
+4. [Juice=t]: 4 ==> [Cheese=t]: 3   <conf:(0.75)> lift:(1.25) lev:(0.12) conv:(0.8) 
+
