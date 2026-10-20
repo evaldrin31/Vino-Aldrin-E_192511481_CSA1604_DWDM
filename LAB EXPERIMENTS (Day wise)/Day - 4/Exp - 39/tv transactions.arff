@@ -1,0 +1,18 @@
+@relation tv_transactions
+
+@attribute SONY {t}
+@attribute BPL {t}
+@attribute LG {t}
+@attribute SAMSUNG {t}
+@attribute ONIDA {t}
+
+@data
+t,t,t,?,?   % T1
+?,t,?,t,?   % T2
+?,t,?,?,t   % T3
+t,t,?,t,?   % T4
+t,?,?,?,t   % T5
+?,t,?,?,t   % T6
+t,?,?,?,t   % T7
+t,t,t,?,t   % T8
+t,t,?,?,t   % T9

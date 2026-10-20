@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 1000 -T 0 -C 0.5 -D 0.05 -U 1.0 -M 0.22 -S -1.0 -c -1
+Relation:     tv_transactions
+Instances:    9
+Attributes:   5
+              SONY
+              BPL
+              LG
+              SAMSUNG
+              ONIDA
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.22 (2 instances)
+Minimum metric <confidence>: 0.5
+Number of cycles performed: 16
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 5
+
+Large Itemsets L(1):
+SONY=t 6
+BPL=t 7
+LG=t 2
+SAMSUNG=t 2
+ONIDA=t 6
+
+Size of set of large itemsets L(2): 6
+
+Large Itemsets L(2):
+SONY=t BPL=t 4
+SONY=t LG=t 2
+SONY=t ONIDA=t 4
+BPL=t LG=t 2
+BPL=t SAMSUNG=t 2
+BPL=t ONIDA=t 4
+
+Size of set of large itemsets L(3): 2
+
+Large Itemsets L(3):
+SONY=t BPL=t LG=t 2
+SONY=t BPL=t ONIDA=t 2
+
+Best rules found:
+
+  1. LG=t 2 ==> SONY=t 2    <conf:(1)> lift:(1.5) lev:(0.07) [0] conv:(0.67)
+  2. LG=t 2 ==> BPL=t 2    <conf:(1)> lift:(1.29) lev:(0.05) [0] conv:(0.44)
+  3. SAMSUNG=t 2 ==> BPL=t 2    <conf:(1)> lift:(1.29) lev:(0.05) [0] conv:(0.44)
+  4. BPL=t LG=t 2 ==> SONY=t 2    <conf:(1)> lift:(1.5) lev:(0.07) [0] conv:(0.67)
+  5. SONY=t LG=t 2 ==> BPL=t 2    <conf:(1)> lift:(1.29) lev:(0.05) [0] conv:(0.44)
+  6. LG=t 2 ==> SONY=t BPL=t 2    <conf:(1)> lift:(2.25) lev:(0.12) [1] conv:(1.11)
+  7. SONY=t 6 ==> BPL=t 4    <conf:(0.67)> lift:(0.86) lev:(-0.07) [0] conv:(0.44)
+  8. ONIDA=t 6 ==> SONY=t 4    <conf:(0.67)> lift:(1) lev:(0) [0] conv:(0.67)
+  9. SONY=t 6 ==> ONIDA=t 4    <conf:(0.67)> lift:(1) lev:(0) [0] conv:(0.67)
+ 10. ONIDA=t 6 ==> BPL=t 4    <conf:(0.67)> lift:(0.86) lev:(-0.07) [0] conv:(0.44)
+ 11. BPL=t 7 ==> SONY=t 4    <conf:(0.57)> lift:(0.86) lev:(-0.07) [0] conv:(0.58)
+ 12. BPL=t 7 ==> ONIDA=t 4    <conf:(0.57)> lift:(0.86) lev:(-0.07) [0] conv:(0.58)
+ 13. SONY=t BPL=t 4 ==> LG=t 2    <conf:(0.5)> lift:(2.25) lev:(0.12) [1] conv:(1.04)
+ 14. BPL=t ONIDA=t 4 ==> SONY=t 2    <conf:(0.5)> lift:(0.75) lev:(-0.07) [0] conv:(0.44)
+ 15. SONY=t ONIDA=t 4 ==> BPL=t 2    <conf:(0.5)> lift:(0.64) lev:(-0.12) [-1] conv:(0.3)
+ 16. SONY=t BPL=t 4 ==> ONIDA=t 2    <conf:(0.5)> lift:(0.75) lev:(-0.07) [0] conv:(0.44)
+
