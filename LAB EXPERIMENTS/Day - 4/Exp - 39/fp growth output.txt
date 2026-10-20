@@ -1,0 +1,32 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 1000 -T 0 -C 0.5 -D 0.05 -U 1.0 -M 0.22
+Relation:     tv_transactions
+Instances:    9
+Attributes:   5
+              SONY
+              BPL
+              LG
+              SAMSUNG
+              ONIDA
+=== Associator model (full training set) ===
+
+FPGrowth found 16 rules (displaying top 16)
+
+ 1. [SAMSUNG=t]: 2 ==> [BPL=t]: 2   <conf:(1)> lift:(1.29) lev:(0.05) conv:(0.44) 
+ 2. [LG=t]: 2 ==> [BPL=t]: 2   <conf:(1)> lift:(1.29) lev:(0.05) conv:(0.44) 
+ 3. [LG=t]: 2 ==> [SONY=t]: 2   <conf:(1)> lift:(1.5) lev:(0.07) conv:(0.67) 
+ 4. [LG=t]: 2 ==> [BPL=t, SONY=t]: 2   <conf:(1)> lift:(2.25) lev:(0.12) conv:(1.11) 
+ 5. [BPL=t, LG=t]: 2 ==> [SONY=t]: 2   <conf:(1)> lift:(1.5) lev:(0.07) conv:(0.67) 
+ 6. [SONY=t, LG=t]: 2 ==> [BPL=t]: 2   <conf:(1)> lift:(1.29) lev:(0.05) conv:(0.44) 
+ 7. [SONY=t]: 6 ==> [BPL=t]: 4   <conf:(0.67)> lift:(0.86) lev:(-0.07) conv:(0.44) 
+ 8. [ONIDA=t]: 6 ==> [BPL=t]: 4   <conf:(0.67)> lift:(0.86) lev:(-0.07) conv:(0.44) 
+ 9. [SONY=t]: 6 ==> [ONIDA=t]: 4   <conf:(0.67)> lift:(1) lev:(0) conv:(0.67) 
+10. [ONIDA=t]: 6 ==> [SONY=t]: 4   <conf:(0.67)> lift:(1) lev:(0) conv:(0.67) 
+11. [BPL=t]: 7 ==> [SONY=t]: 4   <conf:(0.57)> lift:(0.86) lev:(-0.07) conv:(0.58) 
+12. [BPL=t]: 7 ==> [ONIDA=t]: 4   <conf:(0.57)> lift:(0.86) lev:(-0.07) conv:(0.58) 
+13. [BPL=t, SONY=t]: 4 ==> [ONIDA=t]: 2   <conf:(0.5)> lift:(0.75) lev:(-0.07) conv:(0.44) 
+14. [BPL=t, ONIDA=t]: 4 ==> [SONY=t]: 2   <conf:(0.5)> lift:(0.75) lev:(-0.07) conv:(0.44) 
+15. [SONY=t, ONIDA=t]: 4 ==> [BPL=t]: 2   <conf:(0.5)> lift:(0.64) lev:(-0.12) conv:(0.3) 
+16. [BPL=t, SONY=t]: 4 ==> [LG=t]: 2   <conf:(0.5)> lift:(2.25) lev:(0.12) conv:(1.04) 
+
