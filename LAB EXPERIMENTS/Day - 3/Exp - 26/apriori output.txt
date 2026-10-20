@@ -1,0 +1,192 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 1000 -T 0 -C 0.8 -D 0.05 -U 1.0 -M 0.4 -S -1.0 -c -1
+Relation:     monkey_transactions
+Instances:    5
+Attributes:   11
+              M
+              O
+              N
+              K
+              E
+              Y
+              D
+              A
+              U
+              C
+              I
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.4 (2 instances)
+Minimum metric <confidence>: 0.8
+Number of cycles performed: 12
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 7
+
+Large Itemsets L(1):
+M=t 3
+O=t 3
+N=t 2
+K=t 5
+E=t 4
+Y=t 3
+C=t 2
+
+Size of set of large itemsets L(2): 14
+
+Large Itemsets L(2):
+M=t K=t 3
+M=t E=t 2
+M=t Y=t 2
+O=t N=t 2
+O=t K=t 3
+O=t E=t 3
+O=t Y=t 2
+N=t K=t 2
+N=t E=t 2
+N=t Y=t 2
+K=t E=t 4
+K=t Y=t 3
+K=t C=t 2
+E=t Y=t 2
+
+Size of set of large itemsets L(3): 12
+
+Large Itemsets L(3):
+M=t K=t E=t 2
+M=t K=t Y=t 2
+O=t N=t K=t 2
+O=t N=t E=t 2
+O=t N=t Y=t 2
+O=t K=t E=t 3
+O=t K=t Y=t 2
+O=t E=t Y=t 2
+N=t K=t E=t 2
+N=t K=t Y=t 2
+N=t E=t Y=t 2
+K=t E=t Y=t 2
+
+Size of set of large itemsets L(4): 5
+
+Large Itemsets L(4):
+O=t N=t K=t E=t 2
+O=t N=t K=t Y=t 2
+O=t N=t E=t Y=t 2
+O=t K=t E=t Y=t 2
+N=t K=t E=t Y=t 2
+
+Size of set of large itemsets L(5): 1
+
+Large Itemsets L(5):
+O=t N=t K=t E=t Y=t 2
+
+Best rules found:
+
+  1. E=t 4 ==> K=t 4    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  2. M=t 3 ==> K=t 3    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  3. O=t 3 ==> K=t 3    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  4. O=t 3 ==> E=t 3    <conf:(1)> lift:(1.25) lev:(0.12) [0] conv:(0.6)
+  5. Y=t 3 ==> K=t 3    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  6. O=t E=t 3 ==> K=t 3    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+  7. O=t K=t 3 ==> E=t 3    <conf:(1)> lift:(1.25) lev:(0.12) [0] conv:(0.6)
+  8. O=t 3 ==> K=t E=t 3    <conf:(1)> lift:(1.25) lev:(0.12) [0] conv:(0.6)
+  9. N=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 10. N=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 11. N=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 12. N=t 2 ==> Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 13. C=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 14. M=t E=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 15. M=t Y=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 16. N=t K=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 17. O=t N=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 18. N=t 2 ==> O=t K=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 19. N=t E=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 20. O=t N=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 21. N=t 2 ==> O=t E=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 22. N=t Y=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 23. O=t Y=t 2 ==> N=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 24. O=t N=t 2 ==> Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 25. N=t 2 ==> O=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 26. O=t Y=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 27. E=t Y=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 28. O=t Y=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 29. N=t E=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 30. N=t K=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 31. N=t 2 ==> K=t E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 32. N=t Y=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 33. N=t K=t 2 ==> Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 34. N=t 2 ==> K=t Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 35. E=t Y=t 2 ==> N=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 36. N=t Y=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 37. N=t E=t 2 ==> Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 38. N=t 2 ==> E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 39. E=t Y=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 40. N=t K=t E=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 41. O=t N=t E=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 42. O=t N=t K=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 43. N=t E=t 2 ==> O=t K=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 44. N=t K=t 2 ==> O=t E=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 45. O=t N=t 2 ==> K=t E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 46. N=t 2 ==> O=t K=t E=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 47. N=t K=t Y=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 48. O=t K=t Y=t 2 ==> N=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 49. O=t N=t Y=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 50. O=t N=t K=t 2 ==> Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 51. N=t Y=t 2 ==> O=t K=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 52. N=t K=t 2 ==> O=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 53. O=t Y=t 2 ==> N=t K=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 54. O=t N=t 2 ==> K=t Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 55. N=t 2 ==> O=t K=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 56. N=t E=t Y=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 57. O=t E=t Y=t 2 ==> N=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 58. O=t N=t Y=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 59. O=t N=t E=t 2 ==> Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 60. E=t Y=t 2 ==> O=t N=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 61. N=t Y=t 2 ==> O=t E=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 62. N=t E=t 2 ==> O=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 63. O=t Y=t 2 ==> N=t E=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 64. O=t N=t 2 ==> E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 65. N=t 2 ==> O=t E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 66. K=t E=t Y=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 67. O=t E=t Y=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 68. O=t K=t Y=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 69. E=t Y=t 2 ==> O=t K=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 70. O=t Y=t 2 ==> K=t E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 71. K=t E=t Y=t 2 ==> N=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 72. N=t E=t Y=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 73. N=t K=t Y=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 74. N=t K=t E=t 2 ==> Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 75. E=t Y=t 2 ==> N=t K=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 76. N=t Y=t 2 ==> K=t E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 77. N=t E=t 2 ==> K=t Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 78. N=t K=t 2 ==> E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 79. N=t 2 ==> K=t E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 80. N=t K=t E=t Y=t 2 ==> O=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 81. O=t K=t E=t Y=t 2 ==> N=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 82. O=t N=t E=t Y=t 2 ==> K=t 2    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 83. O=t N=t K=t Y=t 2 ==> E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 84. O=t N=t K=t E=t 2 ==> Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 85. K=t E=t Y=t 2 ==> O=t N=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 86. N=t E=t Y=t 2 ==> O=t K=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 87. N=t K=t Y=t 2 ==> O=t E=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 88. N=t K=t E=t 2 ==> O=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 89. O=t E=t Y=t 2 ==> N=t K=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 90. O=t K=t Y=t 2 ==> N=t E=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 91. O=t N=t Y=t 2 ==> K=t E=t 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 92. O=t N=t E=t 2 ==> K=t Y=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 93. O=t N=t K=t 2 ==> E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 94. E=t Y=t 2 ==> O=t N=t K=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 95. N=t Y=t 2 ==> O=t K=t E=t 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 96. N=t E=t 2 ==> O=t K=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 97. N=t K=t 2 ==> O=t E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 98. O=t Y=t 2 ==> N=t K=t E=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+ 99. O=t N=t 2 ==> K=t E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+100. N=t 2 ==> O=t K=t E=t Y=t 2    <conf:(1)> lift:(2.5) lev:(0.24) [1] conv:(1.2)
+101. K=t 5 ==> E=t 4    <conf:(0.8)> lift:(1) lev:(0) [0] conv:(0.5)
+
