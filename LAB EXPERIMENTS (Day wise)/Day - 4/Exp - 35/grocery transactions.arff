@@ -1,0 +1,15 @@
+@relation grocery_transactions
+
+@attribute Bread {t}
+@attribute Cheese {t}
+@attribute Egg {t}
+@attribute Juice {t}
+@attribute Milk {t}
+@attribute Yogurt {t}
+
+@data
+t,t,t,t,?,?   % 1
+t,t,?,t,?,?   % 2
+t,?,?,?,t,t   % 3
+t,?,?,t,t,?   % 4
+?,t,?,t,t,?   % 5
