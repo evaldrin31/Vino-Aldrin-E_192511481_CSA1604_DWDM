@@ -6,6 +6,8 @@
 **Course Name:** Data Warehousing and Data Mining  
 **Department:** Computer Science and Engineering  
 
+Full work of each experiment (code, data, Weka outputs) is in [LAB EXPERIMENTS (Day wise)](<../LAB EXPERIMENTS (Day wise)>).
+
 ---
 
 ## 📋 Experiments Overview (Ordered 1 to 42)
