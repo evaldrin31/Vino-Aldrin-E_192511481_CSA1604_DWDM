@@ -23,7 +23,7 @@ CSA1604/
 │   ├── Vino Aldrin E_192511481_CSA1604_CO1_AT-2_Technical_Presentation.pptx
 │   └── Vino Aldrin E_192511481_CSA1604_CO1_AT-3_Concept_Mapping.pdf
 │
-└── LAB EXPERIMENTS/
+└── LAB EXPERIMENTS (Day wise)/
     ├── Day - 1/
     │   ├── Exp - 1/  (Approximate Median for Grouped Frequency Data)
     │   ├── Exp - 2/  (Measures of Central Tendency & Dispersion for Age)
@@ -131,14 +131,14 @@ Day 1 and Day 2 in R, Day 3 and Day 4 in Weka 3.9.6 (with R for graphs and calcu
 
 | Exp No | Topic / Objective | Folder |
 | :---: | :--- | :--- |
-| **22** | Apriori and FP-Growth (customer transactions a-e) | [`Day - 3/Exp - 22`](<LAB EXPERIMENTS/Day - 3/Exp - 22>) |
-| **23** | Apriori and FP-Growth (Milk, Beer, Diapers, Bread, Butter, Cookies) + theory | [`Day - 3/Exp - 23`](<LAB EXPERIMENTS/Day - 3/Exp - 23>) |
-| **24** | Bayes classification and decision tree (using training and test data) | [`Day - 3/Exp - 24`](<LAB EXPERIMENTS/Day - 3/Exp - 24>) |
-| **25** | diabetes.csv: diabetes trend for different ages using linear and multiple regression | [`Day - 3/Exp - 25`](<LAB EXPERIMENTS/Day - 3/Exp - 25>) |
-| **26** | Frequent itemsets with Apriori and FP-Growth tree (T1 MONKEY ... T5 COOKIE) | [`Day - 3/Exp - 26`](<LAB EXPERIMENTS/Day - 3/Exp - 26>) |
-| **27** | Prediction of categorical data using decision tree: a) Tree b) Preprocess c) Logistic | [`Day - 3/Exp - 27`](<LAB EXPERIMENTS/Day - 3/Exp - 27>) |
-| **28** | Hot dog transactions: frequent itemsets and rules (s = 33.33%, c = 60%) | [`Day - 3/Exp - 28`](<LAB EXPERIMENTS/Day - 3/Exp - 28>) |
-| **29** | Rule-based classification vs decision tree, compare accuracy and plot graph | [`Day - 3/Exp - 29`](<LAB EXPERIMENTS/Day - 3/Exp - 29>) |
+| **22** | Apriori and FP-Growth (customer transactions a-e) | [`Day - 3/Exp - 22`](<LAB EXPERIMENTS (Day wise)/Day - 3/Exp - 22>) |
+| **23** | Apriori and FP-Growth (Milk, Beer, Diapers, Bread, Butter, Cookies) + theory | [`Day - 3/Exp - 23`](<LAB EXPERIMENTS (Day wise)/Day - 3/Exp - 23>) |
+| **24** | Bayes classification and decision tree (using training and test data) | [`Day - 3/Exp - 24`](<LAB EXPERIMENTS (Day wise)/Day - 3/Exp - 24>) |
+| **25** | diabetes.csv: diabetes trend for different ages using linear and multiple regression | [`Day - 3/Exp - 25`](<LAB EXPERIMENTS (Day wise)/Day - 3/Exp - 25>) |
+| **26** | Frequent itemsets with Apriori and FP-Growth tree (T1 MONKEY ... T5 COOKIE) | [`Day - 3/Exp - 26`](<LAB EXPERIMENTS (Day wise)/Day - 3/Exp - 26>) |
+| **27** | Prediction of categorical data using decision tree: a) Tree b) Preprocess c) Logistic | [`Day - 3/Exp - 27`](<LAB EXPERIMENTS (Day wise)/Day - 3/Exp - 27>) |
+| **28** | Hot dog transactions: frequent itemsets and rules (s = 33.33%, c = 60%) | [`Day - 3/Exp - 28`](<LAB EXPERIMENTS (Day wise)/Day - 3/Exp - 28>) |
+| **29** | Rule-based classification vs decision tree, compare accuracy and plot graph | [`Day - 3/Exp - 29`](<LAB EXPERIMENTS (Day wise)/Day - 3/Exp - 29>) |
 
 ---
 
@@ -146,26 +146,26 @@ Day 1 and Day 2 in R, Day 3 and Day 4 in Weka 3.9.6 (with R for graphs and calcu
 
 | Exp No | Topic / Objective | Folder |
 | :---: | :--- | :--- |
-| **30** | Mall customer segmentation with clustering | [`Day - 4/Exp - 30`](<LAB EXPERIMENTS/Day - 4/Exp - 30>) |
-| **31** | K-Means on the employee CSV, changing the cluster size and visualising | [`Day - 4/Exp - 31`](<LAB EXPERIMENTS/Day - 4/Exp - 31>) |
-| **32** | Naive Bayes vs SVM on categorical data, compare and plot | [`Day - 4/Exp - 32`](<LAB EXPERIMENTS/Day - 4/Exp - 32>) |
-| **33** | Count vegetarian and non-vegetarian persons | [`Day - 4/Exp - 33`](<LAB EXPERIMENTS/Day - 4/Exp - 33>) |
-| **34** | Scatter plot of mobile phones sold (x) vs money (y) | [`Day - 4/Exp - 34`](<LAB EXPERIMENTS/Day - 4/Exp - 34>) |
-| **35** | FP-Growth rules (support 50%, confidence 75%) | [`Day - 4/Exp - 35`](<LAB EXPERIMENTS/Day - 4/Exp - 35>) |
-| **36** | Prediction of diabetes using decision tree vs SVM, accuracy and F1 | [`Day - 4/Exp - 36`](<LAB EXPERIMENTS/Day - 4/Exp - 36>) |
-| **37** | R script: partition marks into 3 bins and plot histograms | [`Day - 4/Exp - 37`](<LAB EXPERIMENTS/Day - 4/Exp - 37>) |
-| **38** | Dataset for the given decision tree, accuracy, rule-based induction, comparison | [`Day - 4/Exp - 38`](<LAB EXPERIMENTS/Day - 4/Exp - 38>) |
-| **39** | Apriori vs FP-Growth on TV brand transactions (min_sup = 2, confidence 50%) | [`Day - 4/Exp - 39`](<LAB EXPERIMENTS/Day - 4/Exp - 39>) |
-| **40** | Normalization of strike rates 100, 70, 60, 90, 90 | [`Day - 4/Exp - 40`](<LAB EXPERIMENTS/Day - 4/Exp - 40>) |
-| **41** | Standard deviation and variance of AvgSpeed and TotalTime | [`Day - 4/Exp - 41`](<LAB EXPERIMENTS/Day - 4/Exp - 41>) |
-| **42** | Frequent itemsets (Apriori and FP-growth) and metarule rules (MONKEY transactions) | [`Day - 4/Exp - 42`](<LAB EXPERIMENTS/Day - 4/Exp - 42>) |
+| **30** | Mall customer segmentation with clustering | [`Day - 4/Exp - 30`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 30>) |
+| **31** | K-Means on the employee CSV, changing the cluster size and visualising | [`Day - 4/Exp - 31`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 31>) |
+| **32** | Naive Bayes vs SVM on categorical data, compare and plot | [`Day - 4/Exp - 32`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 32>) |
+| **33** | Count vegetarian and non-vegetarian persons | [`Day - 4/Exp - 33`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 33>) |
+| **34** | Scatter plot of mobile phones sold (x) vs money (y) | [`Day - 4/Exp - 34`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 34>) |
+| **35** | FP-Growth rules (support 50%, confidence 75%) | [`Day - 4/Exp - 35`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 35>) |
+| **36** | Prediction of diabetes using decision tree vs SVM, accuracy and F1 | [`Day - 4/Exp - 36`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 36>) |
+| **37** | R script: partition marks into 3 bins and plot histograms | [`Day - 4/Exp - 37`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 37>) |
+| **38** | Dataset for the given decision tree, accuracy, rule-based induction, comparison | [`Day - 4/Exp - 38`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 38>) |
+| **39** | Apriori vs FP-Growth on TV brand transactions (min_sup = 2, confidence 50%) | [`Day - 4/Exp - 39`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 39>) |
+| **40** | Normalization of strike rates 100, 70, 60, 90, 90 | [`Day - 4/Exp - 40`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 40>) |
+| **41** | Standard deviation and variance of AvgSpeed and TotalTime | [`Day - 4/Exp - 41`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 41>) |
+| **42** | Frequent itemsets (Apriori and FP-growth) and metarule rules (MONKEY transactions) | [`Day - 4/Exp - 42`](<LAB EXPERIMENTS (Day wise)/Day - 4/Exp - 42>) |
 
 ---
 
 ## 🔎 How to Verify
 
 - **ALL LAB EXPERIMENTS/** holds only the output screenshots of every experiment, named `Exp NN - Title.png` (multiple screenshots of one experiment are lettered a, b, c ...). Its README lists them in order with the key result of each.
-- **LAB EXPERIMENTS/Day - N/Exp - NN/** holds the full work of that experiment: R script / Weka input data (.arff/.csv), Weka result buffers (.txt), screenshots and a README.txt with aim, settings and result.
+- **LAB EXPERIMENTS (Day wise)/Day - N/Exp - NN/** holds the full work of that experiment: R script / Weka input data (.arff/.csv), Weka result buffers (.txt), screenshots and a README.txt with aim, settings and result.
 - Day 1 and Day 2 (Exp 01 to 21) are done in R. Day 3 and Day 4 (Exp 22 to 42) are done in Weka 3.9.6 Explorer, with graphs and calculations done in R (screenshots marked `(R)`).
 - Every screenshot is a capture of the live R / Weka window and carries the watermark "Vino Aldrin E 192511481".
 - Commit history: one commit per experiment, titled `EXP NN - ...`.
